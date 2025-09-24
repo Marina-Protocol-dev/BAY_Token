@@ -4,11 +4,11 @@ pragma solidity ^0.8.24;
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 /**
- * @title BAY
+ * @title BAYToken
  * @notice Marina Protocol utility token
- * @dev Standard ERC20 token with permit functionality for gasless approvals
+ * @dev Standard ERC20 token
  */
-contract BAY is ERC20 {
+contract BAYToken is ERC20 {
     /// @notice Total supply of BAY tokens (1 billion)
     uint256 public constant TOTAL_SUPPLY = 1_000_000_000 * 10**18;
 
@@ -21,4 +21,6 @@ contract BAY is ERC20 {
     {
         _mint(recipient, TOTAL_SUPPLY);
     }
+
+
 }
